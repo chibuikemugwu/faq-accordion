@@ -1,5 +1,10 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+
 body, html {
     height: 100%;
+    background-color: rgba(138, 135, 135, 0.192);
     /* margin: 0; */
 }
 
@@ -17,10 +22,71 @@ body, html {
     position: absolute; /* Position absolutely within the parent */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust to perfectly center */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
+    transform: translateX(-50%);/* Adjust to perfectly center
+    color:black; /* Text color */
+    text-align: left; /* Center the text */
     /* background: rgba(, , , .5); Add a semi-transparent background for better readability */
-    padding: 20px; /* Add some padding */
+    /* padding: 20px; Add some padding */
     border-radius: 8px; /* Optional: round the corners */
+
+    background-color: #fff;
+    height:auto;
+    width: auto  ;
+}
+.overlay-sub-content{
+    padding: 20px;
+    width:auto;
+}
+.faq-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 2rem;
+}
+
+.faq-body{
+    /* place-items: center; */
+    
+}
+.faq-body div{
+    /* display: flex;
+    text-align: top;
+    justify-content: center; */
+}
+/* hr{
+    height:5px;
+    border: none;
+    background-color: rgba(0,0,0,0.1);
+} */
+
+
+/* Text Fonts */
+.text-bld{
+    font-family: bold;
+    font-size: 15px;
+}
+.text-sm{
+    font-size: 12px;
+    color: grey;
+    padding-bottom: 15px;
+}
+
+.faq-body div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.faq-body .border-top{
+    
+    border-top-width: 1px;
+    border-top-style:ridge;
+}
+.faq-body .faq-body div img{
+    /* margin-left:10px; */
+}
+
+button{
+    background-color: white;
+    border: none;
 }
