@@ -1,13 +1,26 @@
 *{
     padding: 0; margin: 0; box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'WorkSans-Italic-VariableFont_wght';
+    src: url('../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf')
+    format('truetype');
+}
+@font-face {
+    font-family: 'WorkSans-VariableFont_wght';
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf')
+    format('truetype');
+}
+/*............ General styles........... */
 body, html {
     height: 100%;
     background-color: rgba(138, 135, 135, 0.192);
-    /* margin: 0; */
 }
 
+button{
+    background-color: white;
+    border: none;
+}
 .background-container {
     /* Set the background image */
     background-image: url('../assets/images/background-pattern-desktop.svg'); /* Replace with your image URL */
@@ -32,6 +45,7 @@ body, html {
     background-color: #fff;
     height:auto;
     width: auto  ;
+    box-shadow: 0 20px 10px  rgba(128, 128, 128, 0.5);
 }
 .overlay-sub-content{
     padding: 20px;
@@ -43,21 +57,6 @@ body, html {
     justify-content: left;
     font-size: 2rem;
 }
-
-.faq-body{
-    /* place-items: center; */
-    
-}
-.faq-body div{
-    /* display: flex;
-    text-align: top;
-    justify-content: center; */
-}
-/* hr{
-    height:5px;
-    border: none;
-    background-color: rgba(0,0,0,0.1);
-} */
 
 
 /* Text Fonts */
@@ -82,11 +81,40 @@ body, html {
     border-top-width: 1px;
     border-top-style:ridge;
 }
-.faq-body .faq-body div img{
-    /* margin-left:10px; */
-}
 
-button{
-    background-color: white;
-    border: none;
+/*........... Media Query........ */
+
+/* iphone SE */
+@media(max-width: 667px){
+ 
+    *{
+        padding: 0; margin: 0; box-sizing: border-box;
+    }
+    
+    body, html {
+        height: 100%;
+        background-color: rgba(138, 135, 135, 0.192);
+        /* margin: 0; */
+    }
+    .overlay-content{
+        width: 90%;
+        height: 70vh;
+        margin-bottom: 5rem;
+        box-shadow: 0 20px 10px  rgba(128, 128, 128, 0.5);
+    }
+    .question-1, .question-2,.question-3,.question-4{
+        /* font-family: 'WorkSans-Italic-VariableFont_wght',sans-serif; */
+        font-family: 'WorkSans-VariableFont_wght',sans-serif;
+    }
+    .answer-1{
+        font-family: 'WorkSans-VariableFont_wght',sans-serif;
+
+    }
+    .overlay-sub-content{
+        padding:10px;
+    }
+ 
+    .text-sm{
+        color: grey;
+    } 
 }
